@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <section>
+      <h1>Formulário</h1>
+      <form action="processador.asp" method="post">
+        <div>
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            required
+            pattern="/[a-zA-Z]/"
+          />
+        </div>
+
+        <div>
+          <input
+            type="text"
+            name="cep"
+            placeholder="Seu Cep"
+            pattern="/[0-9]/"
+          />
+        </div>
+
+        <div>
+          Estado:
+          <select name="estado">
+            <option value="">--</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+          </select>
+        </div>
+
+        <div>
+          Cursos:
+          <hr />
+          <input type="checkbox" value="ingles" name="en" /> Inglês
+          <br />
+          <input type="checkbox" value="espanhol" name="es" /> Espanhol
+        </div>
+
+        <div>
+          Sexo:
+          <input type="radio" name="sexow" value="Masculino" /> masculino
+          <input type="radio" name="sexow" value="Feminino" /> Feminino
+        </div>
+
+        <div>
+          <input type="color" name="cor" />
+        </div>
+
+        <div>
+          Senha:
+          <input type="password" name="senha" />
+        </div>
+
+        <div>
+          data:
+          <input type="date" name="data" />
+        </div>
+
+        <div>
+          Comentarios:
+          <br />
+          <textarea name="comentario" cols="50" rows="5"></textarea>
+        </div>
+
+        <div>
+          <input type="submit" name="enviar" value="Enviar Formulario" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
