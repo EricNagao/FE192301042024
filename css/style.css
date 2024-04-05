@@ -1,4 +1,117 @@
-div, span {
-    color: red;
-    background-color: aquamarine;
+* {
+    margin: 0;
 }
+
+/* Header */
+.header {
+    background-color: #7c7c7c;
+}
+.header .container.row {
+    background-color: #ff5858;
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+}
+.header div.header-contatos {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+.header div.header-contatos .empresa {
+    padding: 5px;
+}
+
+.header div.endereco {
+    background-color: rgb(74, 74, 236);
+}
+.header div.email {
+    background-color: rgb(5, 250, 127);
+}
+.header div.contato {
+    background-color: rgb(238, 70, 14);
+}
+
+
+
+
+
+
+/* .div-class {
+    color: #2e488a;
+} */
+
+/* Especificidade */
+/* * {
+    color: black;
+} 
+.first {
+    color: chartreuse !important;
+}
+div {
+    color: chartreuse;
+}
+#div1 {
+    color: rgb(0, 8, 255);
+} */
+
+
+/* Pseudo element */
+/* a.link-stado::after {
+    content: "->  ";
+    color: aqua
+}
+
+a.link-stado {
+    text-decoration: none;
+}
+
+a.link-stado:hover::after {
+    content: "  ->";
+    color: blue
+} */
+
+
+
+
+/* Pseudo class */
+/* a.link-stado {
+    color: red;
+}
+
+a.link-stado:hover {
+    color: blueviolet;
+}
+
+a.link-stado:focus {
+    border: 3px solid red;
+} */
+/* 
+div:not(.div-class) {
+    color: blue;
+} */
+
+
+
+/* Attributes Selectors */
+/* div[data-nome=celso] {
+    color: blueviolet;
+} */
+/* div[class$="first"] {
+    color: blue;
+} */
+
+
+/* Combinators */
+/* header > span {
+    color: brown;
+} */
+
+
+/* Seletores simples */
+/* div.div-class.first, span.div-class, div#div3 {
+    color: red;
+    font-size: 30px;
+} */
+/* * {
+    color: blueviolet;
+} */
