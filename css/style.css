@@ -7,6 +7,11 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: pepper;
+    src: url(../fonts/pepper-sauce.ttf);
+}
+
 html {
     font-size: var(--font-size);
 }
@@ -31,6 +36,10 @@ html {
     padding: 5px;
     width: 100%;
     border-top: transparent;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: pepper; */
     /* font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     font-weight: 400;
@@ -57,6 +66,88 @@ h2 {
     text-align: center;
     font-size: 1rem;
 }
+
+.filho {
+    background-color: rgb(223, 0, 186);
+    color: #d3d3d3;
+    width: 150px;
+    height: 150px;
+    border: #ffffff solid 1px;
+    /* padding: 50px 50px; */
+    /* display: inline-block; */
+}
+
+.filho:nth-child(2) {
+    background-color: #2a2a2a;
+    opacity: 0.8;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+.view-text a {
+    text-decoration: none;
+    background-color: #000;
+    color: #a9a9a9;
+    display: block;
+    height: 100%;
+}
+
+.view-text a:hover {
+    background-color: #c0c0c0;
+    color: #000;
+}
+
+.view-text {
+    border: 1px #000 solid;
+    width: 90%;
+    height: 400px;
+    margin: 5px auto;
+    font-size: 0.8rem;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    /* text-align: justify; */
+    /* text-decoration: underline; */
+    /* text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+    text-indent: 50px;
+
+    line-height: 50px;
+    word-spacing: 10px; */
+    /* word-wrap: break-word;
+    text-overflow: ellipsis;
+    border-radius: 15px ;
+
+    background-color: #759aff;
+    background-image: url(../images/testimonial.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-attachment: scroll; 
+    background-size: cover; */
+
+    /* height: 200px; */
+    /* overflow: auto; */
+
+    /* background: #2a2a2a url(../images/testimonial.jpg); */
+    /* background-color: rgba(185, 19, 177, 0.699); */
+}
+
+/* .border {
+    border: 5px #1238a1 solid;
+    border-radius: 50px 15px 50px 15px ;
+    width: 150px;
+    height: 150px;
+
+    background: linear-gradient(
+        to top right,
+        rgb(0,0,0), 
+        rgba(255,0,0,0.8), 
+        rgb(0, 94, 5)
+    );
+} */
 
 
 /* .pai {
