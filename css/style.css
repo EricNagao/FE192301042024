@@ -70,7 +70,7 @@ h2 {
 .filho {
     background-color: rgb(223, 0, 186);
     color: #d3d3d3;
-    width: 150px;
+    width: 190px;
     height: 150px;
     border: #ffffff solid 1px;
     /* padding: 50px 50px; */
@@ -98,15 +98,17 @@ h2 {
 
 .view-text {
     border: 1px #000 solid;
-    width: 90%;
+    width: 600px;
     height: 400px;
     margin: 5px auto;
     font-size: 0.8rem;
     background-color: aqua;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
 
 
     /* text-align: justify; */
