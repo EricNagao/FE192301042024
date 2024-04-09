@@ -1,0 +1,29 @@
+:root {
+    --icon-font-size: 20px;
+}
+
+[class^="icon-"]::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 700;
+    color: #000;
+}
+
+.icon-endereco::before {
+    content: "\f3c5"; 
+    font-size: var(--icon-font-size);
+}
+
+.logo::before {
+    content: "\f54f";    
+    color: rgb(43, 226, 165);
+    padding-right: 10px;
+    /* background: linear-gradient(
+        to top,
+        #d0d0d0,
+        #0040ca,
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    /* color: #000000; */
+}
