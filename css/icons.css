@@ -15,15 +15,12 @@
 
 .logo::before {
     content: "\f54f";    
-    color: rgb(43, 226, 165);
-    padding-right: 10px;
-    /* background: linear-gradient(
-        to top,
-        #d0d0d0,
-        #0040ca,
-    );
-    background-clip: text;
+    background: -webkit-linear-gradient(#bbbbbb 40%, #166600 50%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    /* color: #000000; */
+    -webkit-text-fill-color: transparent;
+    padding-right: 8px;
+}
+
+.icon-btn::after {
+    content: "\f54f"; 
 }

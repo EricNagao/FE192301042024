@@ -1,0 +1,121 @@
+:root {
+    --calc-responsive: 100% / 12;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 992px) {
+    .menu, .header {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    button.btn {
+        display: none;
+    }
+}
+
+
+.wrapper {
+    /* background-color: aqua;
+    height: 50px;
+    width: 100%; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+[class^="col"] {
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (min-width: 576px) {
+    .col-sm-1 {
+        width: calc(var(--calc-responsive) * 1);
+    }
+    .col-sm-2 {
+        width: calc(var(--calc-responsive) * 2);
+    }
+    .col-sm-3 {
+        width: calc(var(--calc-responsive) * 3);
+    }
+    .col-sm-4 {
+        width: calc(var(--calc-responsive) * 4);
+    }
+    .col-sm-5 {
+        width: calc(var(--calc-responsive) * 5);
+    }
+    .col-sm-6{
+        width: calc(var(--calc-responsive) * 6);
+    }
+    .col-sm-7{
+        width: calc(var(--calc-responsive) * 7);
+    }
+    .col-sm-8{
+        width: calc(var(--calc-responsive) * 8);
+    }
+    .col-sm-9{
+        width: calc(var(--calc-responsive) * 9);
+    }
+    .col-sm-10{
+        width: calc(var(--calc-responsive) * 10);
+    }
+    .col-sm-11{
+        width: calc(var(--calc-responsive) * 11);
+    }
+    .col-sm-12{
+        width: calc(var(--calc-responsive) * 12);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col-md-1 {
+        width: calc(var(--calc-responsive) * 1);
+    }
+    .col-md-2 {
+        width: calc(var(--calc-responsive) * 2);
+    }
+    .col-md-3 {
+        width: calc(var(--calc-responsive) * 3);
+    }
+    .col-md-4 {
+        width: calc(var(--calc-responsive) * 4);
+    }
+    .col-md-5 {
+        width: calc(var(--calc-responsive) * 5);
+    }
+    .col-md-6{
+        width: calc(var(--calc-responsive) * 6);
+    }
+    .col-md-7{
+        width: calc(var(--calc-responsive) * 7);
+    }
+    .col-md-8{
+        width: calc(var(--calc-responsive) * 8);
+    }
+    .col-md-9{
+        width: calc(var(--calc-responsive) * 9);
+    }
+    .col-md-10{
+        width: calc(var(--calc-responsive) * 10);
+    }
+    .col-md-11{
+        width: calc(var(--calc-responsive) * 11);
+    }
+    .col-md-12{
+        width: calc(var(--calc-responsive) * 12);
+    }
+}
+
+
+
+/* Bread Points*/
+/* 576, 768, 992, 1200, 1400 */
+

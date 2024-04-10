@@ -91,9 +91,9 @@ html {
     margin-right: 20px;
 }
 
-/* Overlay*/
+/* modal */
 .painel {
-    display: flex;
+    display: none; /* mudar para display flex*/
     justify-content: center;
     align-items: center;
     position: fixed ;
@@ -112,6 +112,11 @@ html {
     box-shadow: 2px 2px 5px;
 }
 
+.logo {
+    font-size: 5vw;
+    font-weight: 900;
+}
+
 h2 {
     color:#2a2a2a ;
     text-align: center;
@@ -122,6 +127,130 @@ h2 {
 
 
 /* Testing */
+@keyframes caixa10 {
+    0% {
+        position: absolute;
+        left: -120px;
+        top: 170px;
+    }
+    50% {
+        position: absolute;
+        left: 50%;
+        top: 170px;
+    }
+    100% {
+        position: absolute;
+        left: 50%;
+        top: 500px;
+    }
+}
+.caixa10 {
+    width: 150px;
+    height: 30px;
+    border: #000 solid 1px;
+    background-color: #3d7aff;
+    border-radius: 20px;
+    position: absolute;
+    left: 120px;
+    top: 170px;
+    animation-name: caixa10;
+    animation-duration: 1s;
+    transition-property: background-color;
+    transition-duration: 2s;
+    cursor: pointer;
+}
+
+.caixa10:hover  {
+    background-color: #2a2a2a;
+}
+
+
+
+@keyframes exemplo2 {
+    from {
+       transform: rotate(0);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+}
+
+.sombra {
+    border: 1px solid #999;
+    width: 150px;
+    height: 150px;
+    margin: 50px auto;
+    animation-name: exemplo2;
+    animation-duration: 2s;
+}
+
+@keyframes exemplo {
+    from {
+       background-color: #0040ca;
+       width: 20px;
+       transform: rotate(0);
+    }
+    to{
+        background-color: #26fc00;
+        width: 150px;
+        transform: rotate(90deg);
+    }
+}
+
+
+.cx {
+    width: 20px;
+    height: 20px;
+    border: #000 solid 1px;
+}
+.caixa1 {
+    background-color: #0d307d9b;
+    /* transition-property: width, height;
+    transition-duration: 1s, 1s ;
+    transition-delay: 500ms, 1s;
+    transition-timing-function: ease-out; */
+
+    /* transform: rotate(25deg); */
+    /* transform: skewX(-20deg); */
+    /* transform: scale(-0.5, 1); */
+    /* transform-origin: 0 0; */
+    animation-name: exemplo;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.caixa2 {
+    background-color: #1aff009b;
+    animation-name: exemplo;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+.caixa3 {
+    background-color: #ffee009b;
+    animation-name: exemplo;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.caixa4 {
+    background-color: #ed00f19b;
+    animation-name: exemplo;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+
+
+/* .caixa:hover {
+    width: 150px;
+    height: 150px;
+} */
+
 
 .position {
     background-color: #6432ee;
@@ -150,15 +279,6 @@ h2 {
     top: 30px;
     z-index: 1;
 }
-
-.caixa {
-    max-height: 250px;
-    width: 30%;
-    margin: auto;
-    overflow: auto;
-    border: #000 solid 1px;
-}
-
 .stick {
     background-color: #0040ca;
     position: sticky;
@@ -272,6 +392,12 @@ img {
     /* background-color: rgba(185, 19, 177, 0.699); */
 }
 
+.btn {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
 /* .border {
     border: 5px #1238a1 solid;
     border-radius: 50px 15px 50px 15px ;
@@ -377,3 +503,4 @@ div:not(.div-class) {
 /* * {
     color: blueviolet;
 } */
+
