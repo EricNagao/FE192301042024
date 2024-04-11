@@ -6,6 +6,59 @@
     box-sizing: border-box;
 }
 
+main h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 3px;
+}
+
+main .slogan {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+main p {
+    color: #ffffff;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px;
+    padding: 10px 0 30px;
+}
+
+main .main-padding {
+    padding: 50px 200px 50px 100px;
+}
+
+main .leia-mais {
+    background: transparent;
+    border: solid #ffffff 2px;
+    cursor: pointer;
+    line-height: 40px;
+    padding: 0 30px;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+main .leia-mais:hover {
+    background-color: #ffffff ;
+    border: solid #ffffff 2px;
+    cursor: pointer;
+    line-height: 40px;
+    padding: 0 30px;
+    color: #000000;
+}
+
+main .play {
+    background-color: #ffffff;
+    cursor: pointer;
+    height: 50px;
+    color: #ffffff;
+    width: 50px;
+    border-radius: 50%;
+    border: transparent;
+}
+
 @media screen and (max-width: 992px) {
     .menu, .header {
         display: none;
@@ -18,11 +71,20 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .wrapper {
+        background-image: url(../images/hero.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
 
-.wrapper {
-    /* background-color: aqua;
-    height: 50px;
-    width: 100%; */
+@media screen and (min-width: 500px) {
+    .wrapper {
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 .row {

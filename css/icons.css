@@ -24,3 +24,9 @@
 .icon-btn::after {
     content: "\f54f"; 
 }
+
+.icon-play::before {
+    content: "\f04b"; 
+    color: #3b7200;
+}
+
