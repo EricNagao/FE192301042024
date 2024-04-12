@@ -1,0 +1,93 @@
+*{
+    font-size: 40px;
+}
+
+header{
+    height: 100%;
+    width: 100%;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+
+div.container.row{
+    display:flex
+}
+
+.heigh100{
+    height: 100%;
+    width: 100%;
+}
+
+div.topo{
+    padding: 0px 0px 0px 20px;
+}
+
+.divimagem{
+    height: auto;
+    width:  50%;
+}
+
+.imagem{
+    height: 100%;
+    width: 100%;
+}
+
+.aboutus{
+    color: rgb(8, 146, 8);
+    font-size: 0.5rem;
+}
+
+.subtitulo{
+    font-size: 0.5rem;
+    color: gray;
+}
+
+div.titulo{
+    padding-left: 20px;
+    
+}
+
+.espaco{
+    height: 100%;
+    display: flex;
+    padding-top: 10px;
+}
+
+.divespaco{
+    padding-left: 20px;
+}
+
+.invisivel{
+    width: 0.5%;
+    color: transparent;
+    background-color: rgb(8, 146, 8);
+}
+
+div.ourmission{
+    display: flex;
+    padding: 10px
+}
+
+.divourmission{
+    background-color: rgb(51, 148, 51);
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+.backcolor{
+    background-color: rgb(243, 243, 243);
+}
+
+.texto{
+    font-size: 30px;
+}
+
+.divourvission{
+    width: 50%;
+    text-align: center;
+    color: rgb(51, 148, 51);
+}
