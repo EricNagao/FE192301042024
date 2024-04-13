@@ -38,9 +38,36 @@ carrinhoCompra(
     message => `Olá, seja bem vindo(a) - ${message}`
 );
 
+var total = operacao('125', '124');
+console.log('soma = ', total ? total : '00')
 
 
-console.log('Mensagem arrow function: ', func('test123'));
+var xs = 1025;
+// IIEF 
+(function (x) {
+    console.log('função auto invocavel: ' + x);
+})(xs);
 
-// var total = operacao('125', '124');
-// console.log('soma = ', total ? total : '00')
+function func(value1) {
+    function soma(value2) {
+        return value1 + value2;
+    }
+    return soma;
+}
+
+var resultado = func(1)(3);
+console.log(resultado);
+
+// var Resultado = func(1)(3);
+// comentário
+/*
+Meu comenttário de  multiplas linhas
+*/
+
+// case sensitive
+var Casa = '';
+var casa = '';
+var $casa = '';
+var $ = 10;
+var _name = '';
+var _ = 'test'; 

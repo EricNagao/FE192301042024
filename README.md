@@ -14,8 +14,8 @@ Curso Front-End Impacta, start 01/04/2024
 - https://developer.mozilla.org/en-US/
 - https://www.w3schools.com/
 
-
 ## Test - bug gitHub
+
 https://stackoverflow.com/questions/7438313/pushing-to-git-returning-error-code-403-fatal-http-request-failed
 
 Same error and resolution on Mac OS X.
@@ -36,3 +36,6 @@ But it didn’t.
 I got it fixed by deleting the OLDUSER associated with GitHub from Keychain Access app under Passwords section. Then the push command went successful.
 
 $ git push -u origin master
+
+## node watch
+node --watch server.js
