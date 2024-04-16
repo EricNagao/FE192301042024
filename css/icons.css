@@ -30,3 +30,11 @@
     color: #3b7200;
 }
 
+.icon-cake::before {
+    content: "\f015"; 
+    color: #2741eb;
+}
+
+
+
+
