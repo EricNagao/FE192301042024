@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contatos</title>
+    <style>
+      .active {
+        border: transparent;
+        background: radial-gradient(red, blue);
+      }
+
+      .btn {
+        cursor: pointer;
+      }
+
+      .modal {
+        position: fixed;
+        background-color: rgba(0, 8, 8, 0.825);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .modal p {
+        width: 50%;
+        background-color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="header" data-js="div-header" id="header">
+        sfasdfasd
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nam.
+        </p>
+        <a href="#" data-js="link" class="link1">Leia mais</a>
+      </div>
+      <!-- meu comentario -->
+      <div data-js="div-body" data-test="fasdfas" class="header">
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nam.
+        </p>
+
+        <a href="#" data-js="link" class="link2">Leia mais</a>
+      </div>
+
+      <div class="" data-js="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          voluptate optio ipsa incidunt dolorum cumque debitis dolor modi
+          blanditiis, eius eum omnis voluptatibus ullam tempora iure rerum vero
+          magni porro!
+        </p>
+      </div>
+
+      <button class="btn" data-js="btn">Clique me</button>
+    </section>
+    <script src="javascript/bundle.js"></script>
+  </body>
+</html>
