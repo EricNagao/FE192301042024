@@ -10,7 +10,7 @@
         });
     });
 
-    console.dir(eLink);
+    // console.dir(eLink);
     
     /** Btn */
     const el = document.querySelector('[data-js="btn"]');
