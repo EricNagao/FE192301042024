@@ -1,15 +1,6 @@
 (function(Pet, Product){
     'use strict'
 
-    let compra = {
-        sabao: 20,
-        batata: 80,
-    }
-
-    let json = JSON.stringify(compra);
-
-    localStorage.setItem('produto', json);
-
     /**
      * Objeto para criar um carrinho de compra
      * @param {string} selector selecionar o container dos produtos
@@ -21,7 +12,7 @@
     Shopping.prototype.addProduto = function () {
         let produto = document.querySelectorAll(this.selector);
         produto.forEach(element => {
-            // console.log(element.lastElementChild.firstElementChild.children);
+            // console.log(element.lastElementChild.firstElementChild.children[0].getAttribute('data-name'));
 
             let btn = element.querySelector('[data-js="btn"]');
             let message = element.querySelector('[data-js="message"]');

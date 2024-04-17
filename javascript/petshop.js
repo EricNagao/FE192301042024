@@ -1,6 +1,6 @@
 (function(win){
     'use strict'
-
+    
     const PetShop = {};
 
     PetShop.isNumber = function (value) {
