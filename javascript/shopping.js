@@ -7,17 +7,32 @@
      */
     const Shopping = function({selector: selector}) {
         this.selector = selector;
+        this.list = [];
     }
 
     Shopping.prototype.addProduto = function () {
         let produto = document.querySelectorAll(this.selector);
         produto.forEach(element => {
-            // console.log(element.lastElementChild.firstElementChild.children[0].getAttribute('data-name'));
-
+            
+            // element.lastElementChild.firstElementChild.children[0].getAttribute('data-name');
+            let list = this.list;
             let btn = element.querySelector('[data-js="btn"]');
             let message = element.querySelector('[data-js="message"]');
             btn.addEventListener('click', function(event){
                 message.textContent = 'Produto adiciona ao carrinho';
+                // this.parentElement.querySelector('div p').innerHTML
+
+                let produto = new Product(
+                    {
+                        name: 'lorem', 
+                        desc: 'test', 
+                        value: '20'
+                    }
+                );
+
+                list.push(produto);
+
+                console.log(list);
             });
 
             btn.addEventListener('mouseout', function(event){

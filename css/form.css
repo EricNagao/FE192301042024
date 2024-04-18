@@ -1,0 +1,41 @@
+.form-contatos {
+    justify-content: center;
+    width: 400px;
+    align-items: center;
+    margin: auto;
+}
+
+.form-control {
+    margin: 0 0 10px;
+
+}
+
+.form-control label{
+    display: block;
+}
+
+.form-control input, .form-control textarea, select{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+.form-control textarea{
+    width: 100%;
+    height: 150px;
+}
+
+.form-control .campo-nome{
+    height: 50px;
+}
+
+
+.btn-form {
+    border: transparent;
+    background: linear-gradient(rgb(63, 63, 150), rgb(41, 41, 77));
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 50px;
+    cursor: pointer;
+}
