@@ -1,4 +1,4 @@
-(function(Pet, Product){
+(function(Pet, Product, $){
     'use strict'
 
     /**
@@ -11,26 +11,27 @@
     }
 
     Shopping.prototype.addProduto = function () {
-        let produto = document.querySelectorAll(this.selector);
+        let produto = $(this.selector);
         produto.forEach(element => {
-            
-            // element.lastElementChild.firstElementChild.children[0].getAttribute('data-name');
-            let list = this.list;
+            const list = this.list;
+            const funcCarrinho = this.addCarrinhoTotal;
             let btn = element.querySelector('[data-js="btn"]');
             let message = element.querySelector('[data-js="message"]');
             btn.addEventListener('click', function(event){
                 message.textContent = 'Produto adiciona ao carrinho';
-                // this.parentElement.querySelector('div p').innerHTML
+                const name = this.parentElement.querySelector('div h3').getAttribute('data-name')
+                const desc = this.parentElement.querySelector('div p').getAttribute('data-desc')
+                const value = this.parentElement.querySelector('.value').getAttribute('data-value')
 
                 let produto = new Product(
                     {
-                        name: 'lorem', 
-                        desc: 'test', 
-                        value: '20'
+                        name: name, 
+                        desc: desc, 
+                        value: value
                     }
                 );
-
                 list.push(produto);
+                funcCarrinho(list.length);
 
                 console.log(list);
             });
@@ -50,8 +51,17 @@
         });
     }
 
+    Shopping.prototype.init = function() {
+        this.addProduto();
+    }
+
+    Shopping.prototype.addCarrinhoTotal = function(quantidade) {
+        let carrinho = document.querySelector('[data-js="qtd-car"]');
+        carrinho.innerHTML = quantidade;
+    }
+
     const sh = new Shopping({selector: '[data-js="card"]'});
-    sh.addProduto();
+    sh.init();
 
 
-})(PetShop, PetShop.Product)
+})(PetShop, PetShop.Product, jQuery)

@@ -57,6 +57,10 @@
         <div class="menu">
           <nav>
             <ul class="nav-menu">
+              <li>
+                <a class="nav-item" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <span data-js="qtd-car"></span>
+              </li>
               <li><a class="nav-item" href="#">Sobre nós</a></li>
               <li><a class="nav-item" href="#">Home</a></li>
               <li><a class="nav-item" href="#">Serviço</a></li>
@@ -104,11 +108,11 @@
                     </div>
                     <div class="col-md-6">
                       <div>
-                        <h3 data-name="lorem0">Lorem ipsum dolor sit amet.</h3>
-                        <p data-desc="desc">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, aut.
+                        <h3 data-name="lorem 0">Lorem 0</h3>
+                        <p data-desc="Lorem ipsum dolor, sit amet">
+                          Lorem ipsum dolor sit amet.
                         </p>
-                        <div data-value="52.88">R$ 52,88</div>
+                        <div class="value" data-value="52.88">R$ 52,88</div>
                       </div>
                       <button data-js="btn"> Adicionar ao Carrimho</button>
                       <div data-js="message"></div>
@@ -122,11 +126,11 @@
                    </div>
                    <div class="col-md-6">
                     <div>
-                      <h3 data-name="lorem1">Lorem ipsum dolor sit amet.</h3>
-                      <p data-desc="desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, aut.
+                      <h3 data-name="lorem 1">Lorem 1</h3>
+                      <p data-desc="consectetur adipisicing eli">
+                        consectetur adipisicing eli
                       </p>
-                      <div data-value="52.88">R$ 52,88</div>
+                      <div class="value" data-value="82">R$ 82,00</div>
                     </div>
                      <button data-js="btn"> Adicionar ao Carrimho</button>
                      <div data-js="message"></div>
@@ -140,11 +144,11 @@
                  </div>
                  <div class="col-md-6">
                   <div>
-                    <h3 data-name="lorem2">Lorem ipsum dolor sit amet.</h3>
-                    <p data-desc="desc">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, aut.
+                    <h3 data-name="lorem 2">Lorem 2</h3>
+                    <p data-desc="ipsum, sit amet adipisicing elit">
+                      ipsum, sit amet adipisicing elit
                     </p>
-                    <div data-value="52.88">R$ 52,88</div>
+                    <div class="value" data-value="10.88">R$ 10,88</div>
                   </div>
                    <button data-js="btn"> Adicionar ao Carrimho</button>
                    <div data-js="message"></div>
@@ -158,11 +162,11 @@
                    </div>
                    <div class="col-md-6">
                       <div>
-                        <h3 data-name="lorem3">Lorem ipsum dolor sit amet.</h3>
-                        <p data-desc="desc">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, aut.
+                        <h3 data-name="lorem 3">Lorem 3</h3>
+                        <p data-desc="Aliqua consectetur adipisicing elit">
+                          Aliqua consectetur adipisicing elit.
                         </p>
-                        <div data-value="52.88">R$ 52,88</div>
+                        <div class="value" data-value="28.22">R$ 28,22</div>
                       </div>
                      <button data-js="btn"> Adicionar ao Carrimho</button>
                      <div data-js="message"></div>
@@ -182,15 +186,15 @@
           </div>
           <div class="row">
               <div class="col-md-12">
-                  <div class="form-contatos">
-                      <form action="" data-js="form">
+                  <div class="form-contatos" id="form">
+                      <form action="http://127.0.0.1:3000/cadastro" method="post" data-js="form">
                         <div class="form-control">
                           <label for="nome">Nome</label>
                           <input type="text" name="nome" id="nome" data-js="nome" class="campo-nome">
                         </div>
                         <div class="form-control">
                           <label for="comentario">Comentario</label>
-                          <textarea class="campo-textarea" name="camentario" id="comentario" data-js="comentario"></textarea>
+                          <textarea class="campo-textarea" name="comentario" id="comentario" data-js="comentario"></textarea>
                           <div data-js="contator"></div>
                         </div>
                         <div class="form-control">
@@ -203,7 +207,7 @@
                           
                         </div>
                         <div class="form-control">
-                          <input type="submit" value="Enviar" class="btn-form" data-js="btn-form">
+                          <input type="submit" name="enviar" value="Enviar" class="btn-form" data-js="btn-form">
                         </div>
                       </form>
                   </div>
@@ -211,7 +215,7 @@
           </div>
       </div>
     </section>
-
+    
     <footer style="height: 300px; width: 100%;">
 
     </footer>
@@ -220,10 +224,16 @@
     <div class="painel">
       <div class="login"></div>
     </div>
+
+
+
+    <script src="javascript/jquery-3.7.1.js"></script>
     <script src="javascript/petshop.js"></script>
-    <script src="javascript/produto.js"></script>
+    <!--<script src="javascript/produto.js"></script>
     <script src="javascript/shopping.js"></script>
-    <!-- <script src="javascript/form.js"></script>
-    <script src="javascript/ajax.js"></script> -->
+    <script src="javascript/form.js"></script>
+    <script src="javascript/ajax.js"></script>
+    <script src="javascript/data.js"></script> -->
+    <script src="javascript/useJquery.js"></script>
   </body>
 </html>
