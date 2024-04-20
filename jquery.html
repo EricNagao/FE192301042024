@@ -6,22 +6,49 @@
     <title>Document</title>
     <style>
       .test-jquery {
-        position: absolute;
+        position: relative;
         background-color: blue;
         color: azure;
         width: 300px;
       }
     </style>
   </head>
-  <body>
-    <div class="test-jquery" id="jq" data-js="jquery">
+  <body class="is-front">
+    <!-- <div class="test-jquery" id="jq" data-js="jquery">
       <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt non
-        sapiente, earum vitae rem vel delectus? Ut consequuntur assumenda
-        minima, odio illum nulla harum odit libero, quas ipsam veniam possimus?
+        Lorem ipsum dolor <strong>sit amet </strong>consectetur adipisicing
+        elit. Deserunt non sapiente, earum vitae rem vel delectus? Ut
+        consequuntur assumenda minima, odio illum nulla harum odit libero, quas
+        ipsam veniam possimus?
       </h2>
       <button data-js="jk-bt">Clique me</button>
-    </div>
+    </div> -->
+    <section class="minha-section">
+      <div
+        class="setter coments data-provider"
+        style="min-height: 50px; width: 50%; border: 1px solid #999"
+        data-json="{'name': 'drawer'}"
+      >
+        <h2>Testando metodo find</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          <span>Leia Mais</span>
+        </p>
+      </div>
+      <br />
+      <form action="">
+        <textarea name="" id="" cols="50" rows="5" data-js="comment"></textarea>
+        <div>
+          <button data-js="btn">Adiciona Comentário</button>
+        </div>
+      </form>
+    </section>
+
+    <div class="divs">conteudo das divs 1</div>
+    <div class="divs">conteudo das divs 2</div>
+    <div class="divs">conteudo das divs 3</div>
+    <div class="divs">conteudo das divs 4</div>
+    <div class="divs">conteudo das divs 5</div>
 
     <script src="javascript/jquery-3.7.1.js"></script>
     <script src="javascript/useJquery.js"></script>

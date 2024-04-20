@@ -1,4 +1,4 @@
-(function(){
+(function($){
     'use strict'
 
     let ajax = new XMLHttpRequest();
@@ -14,6 +14,11 @@
     const data = JSON.stringify({login: 'carlos', senha: 1245465});
 
     ajax.send(data);
+
+
+    $( document ).on( "ajaxComplete", function( event, request, settings ) {
+        $( "#msg" ).focu();
+    } );
 
 
 
@@ -62,4 +67,4 @@
 
     // console.log(ajax);
 
-})()
+})(jQuery)

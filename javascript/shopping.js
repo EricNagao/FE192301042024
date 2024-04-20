@@ -11,7 +11,7 @@
     }
 
     Shopping.prototype.addProduto = function () {
-        let produto = $(this.selector);
+        let produto = document.querySelectorAll(this.selector);
         produto.forEach(element => {
             const list = this.list;
             const funcCarrinho = this.addCarrinhoTotal;
